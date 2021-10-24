@@ -7,7 +7,7 @@
   }
   header { 
     background-color: #1C0C5B;
-    padding: 30px;
+    padding: 25px;
     text-align: center;
     font-size: 35px;
     color: white;
@@ -17,7 +17,7 @@
     float: left;
     color: white;
     width: 25%;
-    height: 350px;
+    height: 490px;
     background: #3D2C8D;
     padding: 20px;
   }     /*Style class Nav*/
@@ -35,18 +35,26 @@
     padding: 20px;
     width: 50%;
     background-color: #52057B;
-    height: 350px;
+    height: 490px;
   } /*Style class Article*/
 
   aside {
     float: left;
     color: white;
-    padding: 20px;
+    padding: 35px;
     width: 25%;
     background-color: #3B185F;
-    height: 350px;
+    height: 490px;
     font-size: 15px;
   } /*Style class Aside*/
+    aside ul {
+      list-style-type: none;
+      padding: 0;
+      }  /*Style Ul di aside*/
+    aside img {
+        margin-right: 5px;
+      } /*Style img di aside*/
+      
 
   .content::after {
     content: "";
@@ -61,18 +69,24 @@
     color: white;
   } /*Style class footer*/    
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1240px) {
     nav {
       width: 30%;
-      height: 335px;
+      height: 450px;
         }
     article{
           width: 70%;
-          height: 335px;
+          height: 450px;
         }
     aside {
       width: 100%;
       height: auto;
+        }
+        aside img{
+          width: 5%;
+        }
+        button{
+          width: 50%;
         }
     }
   @media (max-width: 565px) {
@@ -80,4 +94,10 @@
       width: 100%;
       height: auto;
         }
+    aside img{
+      width: 8%;
     }
+    button{
+      width: 100%;
+    }
+  }
